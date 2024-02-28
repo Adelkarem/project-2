@@ -21,7 +21,7 @@ export const productValidation = (product: {
         price: '',
     };
 
-const validUrl = /^(ftp|http|https ):\/\/[^."]+$/.test(product.imageURL)
+const validUrl = /^(ftp|http|https):\/\/[^ "]+$/.test(product.imageURL);
 
     if (! product.title.trim() || product.title.length < 10 || product.title.length > 80) {
         errors.title = "Product title must be between 10 and 80 characters";
